@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:minHeight="@dimen/list_item_height">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_marginRight="@dimen/margin16dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <RelativeLayout
+        android:id="@+id/textRoot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/imageView"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/margin16dp">
+
+        <TextView
+            android:id="@+id/category_textView"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:gravity="bottom"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/name_textView"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/category_textView"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/address_textView"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_below="@id/name_textView"
+            android:layout_weight="1"
+            android:gravity="top"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+</RelativeLayout>
