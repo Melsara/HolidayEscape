@@ -33,17 +33,17 @@ public class PoiAdapter extends ArrayAdapter<POI>{
                     R.layout.list_item, parent, false);
         }
 
-        TextView categoryTextView = (TextView) listItemView.findViewById(R.id.category_textView);
-        categoryTextView.setText(currentPoi.getCategory());
+/*        TextView categoryTextView = (TextView) listItemView.findViewById(R.id.category_textView);
+        categoryTextView.setText(currentPoi.getCategory());*/
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.name_textView);
         nameTextView.setText(currentPoi.getName());
         TextView addressTextView = (TextView) listItemView.findViewById(R.id.address_textView);
         addressTextView.setText(currentPoi.getAddress());
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.imageView);
 
-        View textRoot = listItemView.findViewById(R.id.textRoot);
+/*        View textRoot = listItemView.findViewById(R.id.textRoot);
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
-        textRoot.setBackgroundColor(color);
+        textRoot.setBackgroundColor(color);*/
 
         return listItemView;
     }

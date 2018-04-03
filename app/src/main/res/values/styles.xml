@@ -9,9 +9,9 @@
     </style>
 
     <style name="tabLayout" parent="Widget.Design.TabLayout">
-        <item name="tabIndicatorColor">#FFF7DA</item>
-        <item name="android:textColor">@android:color/white</item>
-        <item name="tabBackground">@color/colorPrimary</item>
+<!--        <item name="tabIndicatorColor">#FFF7DA</item>
+        <item name="android:textColor">@color/secondaryText</item>-->
+        <item name="tabBackground">@color/colorAccent</item>
         <item name="tabMode">fixed</item>
         <item name="tabMaxWidth">0dp</item>
         <item name="tabGravity">fill</item>
