@@ -17,9 +17,8 @@ public class PoiAdapter extends ArrayAdapter<POI>{
 
     private int mColorResourceId;
 
-    public PoiAdapter (Activity context, ArrayList<POI> pois, int colorResourceId){
+    public PoiAdapter (Activity context, ArrayList<POI> pois){
         super(context, 0, pois);
-        mColorResourceId = colorResourceId;
     }
 
     @NonNull

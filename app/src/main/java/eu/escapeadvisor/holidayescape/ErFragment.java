@@ -9,18 +9,17 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 
-public class BarsFragment extends Fragment {
-
+public class ErFragment extends Fragment {
     URL url1 = new URL("http://www.google.com/");
     Context mContext;
 
-
-    public BarsFragment() throws MalformedURLException {
+    public ErFragment() throws MalformedURLException {
         // Required empty public constructor
     }
 
@@ -28,17 +27,17 @@ public class BarsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        mContext = getContext();
+        mContext  = getContext();
         View rootView = inflater.inflate(R.layout.activity_poi_list, container, false);
-        final ArrayList<POI> bars = new ArrayList<>();
+        final ArrayList<POI> ers = new ArrayList<>();
 
-        bars.add(new POI(mContext.getResources().getString(R.string.category_bars),"Bar1", url1, "email", "000000000",
-                        0, 0, R.drawable.ic_launcher_background, "Lorem ipsum","address" ));
+        ers.add(new POI(mContext.getResources().getString(R.string.category_er),"ER1", url1, "email", "000000000",
+                0, 0, R.drawable.ic_launcher_background, "Lorem ipsum","address" ));
 
-        PoiAdapter barsAdapter = new PoiAdapter(getActivity(), bars);
+        PoiAdapter ersAdapter = new PoiAdapter(getActivity(), ers);
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
-        listView.setAdapter(barsAdapter);
+        listView.setAdapter(ersAdapter);
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
