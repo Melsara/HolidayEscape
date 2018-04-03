@@ -3,5 +3,7 @@
     <string name="title_activity_poi_detail">Map</string>
     <string name="title_activity_maps">Map</string>
     <string name="category_bars">Bars and Restaurants</string>
-
+    <string name="category_er">Escape Rooms</string>
+    <string name="category_romanticPlaces">Romantic Places</string>
+    <string name="category_culturalPlaces">Some Cultural Places</string>
 </resources>
