@@ -38,6 +38,9 @@
         <activity
             android:name=".MapFragment"
             android:label="@string/title_activity_poi_detail"></activity>
+        <activity
+            android:name=".DetailsActivity"
+            android:label="@string/title_activity_poi_detail"></activity>
     </application>
 
 </manifest>
