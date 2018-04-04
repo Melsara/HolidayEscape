@@ -75,6 +75,10 @@ public class POI {
         return mImage;
     }
 
+    public String getDescription (){
+        return mDescription;
+    }
+
     public String getAddress (){
         return mAddress;
     }

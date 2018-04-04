@@ -2,7 +2,9 @@ package eu.escapeadvisor.holidayescape;
 
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -43,7 +45,35 @@ public class BarsFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                POI bar = (POI) adapterView.getItemAtPosition(i);
+                URL url = url1;
+                for (int position = i; position > 1; position++) {
+                    url = bar.getUrl();
+                }
+                String category = bar.getCategory();
+                String name = bar.getName();
+                String email = bar.getEmail();
+                String tel = bar.getTel();
+                int lat = bar.getLat();
+                int lng = bar.getLng();
+                int image = bar.getImage();
+                String description = bar.getDescription();
+                String address = bar.getAddress();
 
+                Intent openBarDetail = new Intent(getContext(), DetailsActivity.class);
+
+                Bundle bundle = new Bundle();
+                bundle.putString(GlobalConstants.URL_KEY, url.toString());
+                bundle.putString(GlobalConstants.NAME_KEY, name);
+                bundle.putString(GlobalConstants.EMAIL_KEY, email);
+                bundle.putString(GlobalConstants.TEL_KEY, tel);
+                bundle.putInt(GlobalConstants.LAT_KEY, lat);
+                bundle.putInt(GlobalConstants.LNG_KEY, lng);
+                bundle.putInt(GlobalConstants.IMAGE_KEY, image);
+                bundle.putString(GlobalConstants.DESC_KEY, description);
+                bundle.putString(GlobalConstants.ADDRESS_KEY, address);
+                openBarDetail.putExtras(bundle);
+                startActivity(openBarDetail);
             }
         });
 
