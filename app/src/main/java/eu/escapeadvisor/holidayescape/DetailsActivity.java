@@ -1,8 +1,16 @@
 package eu.escapeadvisor.holidayescape;
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
+import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.net.URL;
 
@@ -16,7 +24,7 @@ import static eu.escapeadvisor.holidayescape.GlobalConstants.NAME_KEY;
 import static eu.escapeadvisor.holidayescape.GlobalConstants.TEL_KEY;
 import static eu.escapeadvisor.holidayescape.GlobalConstants.URL_KEY;
 
-public class DetailsActivity extends Activity {
+public class DetailsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private String url;
     private String name;
@@ -32,6 +40,10 @@ public class DetailsActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
+
+        MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
+        mapFragment.getMapAsync((OnMapReadyCallback) this);
+
         Intent openDetailsActivity = getIntent();
         final Bundle bundle = openDetailsActivity.getExtras();
         url = bundle.getString(URL_KEY);
@@ -44,5 +56,12 @@ public class DetailsActivity extends Activity {
         description = bundle.getString(DESC_KEY);
         address = bundle.getString(ADDRESS_KEY);
 
+    }
+
+    @Override
+    public void onMapReady(GoogleMap map) {
+        map.addMarker(new MarkerOptions()
+                .position(new LatLng(0, 0))
+                .title("Marker"));
     }
 }
