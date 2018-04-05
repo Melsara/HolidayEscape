@@ -35,7 +35,7 @@ public class BarsFragment extends Fragment {
         final ArrayList<POI> bars = new ArrayList<>();
 
         bars.add(new POI(mContext.getResources().getString(R.string.category_bars),"Bar1", url1, "email", "000000000",
-                        0, 0, R.drawable.ic_launcher_background, "Lorem ipsum","address" ));
+                39.230469, 9.111982, R.drawable.ic_launcher_background, "Lorem ipsum","address" ));
 
         PoiAdapter barsAdapter = new PoiAdapter(getActivity(), bars);
         ListView listView = (ListView) rootView.findViewById(R.id.list);
@@ -54,8 +54,8 @@ public class BarsFragment extends Fragment {
                 String name = bar.getName();
                 String email = bar.getEmail();
                 String tel = bar.getTel();
-                int lat = bar.getLat();
-                int lng = bar.getLng();
+                double lat = bar.getLat();
+                double lng = bar.getLng();
                 int image = bar.getImage();
                 String description = bar.getDescription();
                 String address = bar.getAddress();
@@ -67,8 +67,8 @@ public class BarsFragment extends Fragment {
                 bundle.putString(GlobalConstants.NAME_KEY, name);
                 bundle.putString(GlobalConstants.EMAIL_KEY, email);
                 bundle.putString(GlobalConstants.TEL_KEY, tel);
-                bundle.putInt(GlobalConstants.LAT_KEY, lat);
-                bundle.putInt(GlobalConstants.LNG_KEY, lng);
+                bundle.putDouble(GlobalConstants.LAT_KEY, lat);
+                bundle.putDouble(GlobalConstants.LNG_KEY, lng);
                 bundle.putInt(GlobalConstants.IMAGE_KEY, image);
                 bundle.putString(GlobalConstants.DESC_KEY, description);
                 bundle.putString(GlobalConstants.ADDRESS_KEY, address);

@@ -9,8 +9,8 @@ public class POI {
     private URL mUrl;
     private String mEmail;
     private String mTel;
-    private int mLat;
-    private int mLng;
+    private double mLat;
+    private double mLng;
     private int mImage;
     private String mDescription;
     private String mAddress;
@@ -30,7 +30,7 @@ public class POI {
      * @param address
      */
 
-    public POI (String category, String name, URL url, String email, String tel, int lat, int lng, int image, String description, String address) {
+    public POI (String category, String name, URL url, String email, String tel, double lat, double lng, int image, String description, String address) {
         mCategory = category;
         mName = name;
         mUrl = url;
@@ -63,11 +63,11 @@ public class POI {
         return mTel;
     }
 
-    public int getLat() {
+    public double getLat() {
         return mLat;
     }
 
-    public int getLng() {
+    public double getLng() {
         return mLng;
     }
 
