@@ -6,9 +6,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
@@ -30,11 +32,12 @@ public class DetailsActivity extends FragmentActivity implements OnMapReadyCallb
     private String name;
     private String email;
     private String tel;
-    private int lat;
-    private int lng;
+    private double lat;
+    private double lng;
     private int image;
     private String description;
     private String address;
+    LatLng position;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,18 +53,30 @@ public class DetailsActivity extends FragmentActivity implements OnMapReadyCallb
         name = bundle.getString(NAME_KEY);
         email = bundle.getString(EMAIL_KEY);
         tel = bundle.getString(TEL_KEY);
-        lat = bundle.getInt(LAT_KEY);
-        lng = bundle.getInt(LNG_KEY);
+        lat = bundle.getDouble(LAT_KEY);
+        lng = bundle.getDouble(LNG_KEY);
         image = bundle.getInt(IMAGE_KEY);
         description = bundle.getString(DESC_KEY);
         address = bundle.getString(ADDRESS_KEY);
-
+        setPosition(lat, lng);
     }
 
     @Override
     public void onMapReady(GoogleMap map) {
         map.addMarker(new MarkerOptions()
-                .position(new LatLng(0, 0))
-                .title("Marker"));
+                .position(position)
+                .title(name));
+        CameraPosition cameraPosition = new CameraPosition.Builder()
+                .target(position)      // Sets the center of the map to Mountain View
+                .zoom(17)                   // Sets the zoom
+                .bearing(90)                // Sets the orientation of the camera to east
+                .tilt(30)                   // Sets the tilt of the camera to 30 degrees
+                .build();                   // Creates a CameraPosition from the builder
+        map.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+    }
+
+    private LatLng setPosition(double lat, double lng) {
+        position = new LatLng(lat, lng);
+        return position;
     }
 }
