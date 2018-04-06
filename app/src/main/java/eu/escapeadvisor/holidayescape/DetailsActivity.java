@@ -1,7 +1,5 @@
 package eu.escapeadvisor.holidayescape;
 
-import android.app.Activity;
-import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
@@ -13,8 +11,6 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-
-import java.net.URL;
 
 import static eu.escapeadvisor.holidayescape.GlobalConstants.ADDRESS_KEY;
 import static eu.escapeadvisor.holidayescape.GlobalConstants.DESC_KEY;
@@ -44,8 +40,14 @@ public class DetailsActivity extends FragmentActivity implements OnMapReadyCallb
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
-        MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
-        mapFragment.getMapAsync((OnMapReadyCallback) this);
+        try {
+            // Loading map
+            initilizeMap();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
 
         Intent openDetailsActivity = getIntent();
         final Bundle bundle = openDetailsActivity.getExtras();
@@ -61,6 +63,11 @@ public class DetailsActivity extends FragmentActivity implements OnMapReadyCallb
         setPosition(lat, lng);
     }
 
+    public void initilizeMap () {
+            MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
+        mapFragment.getMapAsync(this);
+    }
+
     @Override
     public void onMapReady(GoogleMap map) {
         map.addMarker(new MarkerOptions()
@@ -73,10 +80,19 @@ public class DetailsActivity extends FragmentActivity implements OnMapReadyCallb
                 .tilt(30)                   // Sets the tilt of the camera to 30 degrees
                 .build();                   // Creates a CameraPosition from the builder
         map.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+        map.getUiSettings().setZoomGesturesEnabled(true);
+        map.getUiSettings().setMyLocationButtonEnabled(true);
+        map.getUiSettings().setRotateGesturesEnabled(true);
     }
 
     private LatLng setPosition(double lat, double lng) {
         position = new LatLng(lat, lng);
         return position;
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        initilizeMap();
     }
 }
