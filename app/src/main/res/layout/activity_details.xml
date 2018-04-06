@@ -4,7 +4,25 @@
     android:layout_height="match_parent"
     android:id="@+id/details">
 
-    <include layout="@layout/fragment_map"/>
+    <include layout="@layout/fragment_map"
+        android:id="@+id/map"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/map">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_maxWidth="@dimen/image_size"
+            android:layout_maxHeight="@dimen/image_size" />
+
+
+
+    </LinearLayout>
 
 
 </RelativeLayout>
