@@ -8,7 +8,7 @@
         android:id="@+id/imageView"
         android:layout_width="@dimen/list_item_height"
         android:layout_height="@dimen/list_item_height"
-        android:layout_marginRight="@dimen/margin16dp"
+        android:layout_marginRight="@dimen/margin16"
         android:src="@mipmap/ic_launcher" />
 
     <RelativeLayout
@@ -20,7 +20,7 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@id/imageView"
         android:orientation="vertical"
-        android:paddingLeft="@dimen/margin16dp">
+        android:paddingLeft="@dimen/margin16">
 
 <!--        <TextView
             android:id="@+id/category_textView"

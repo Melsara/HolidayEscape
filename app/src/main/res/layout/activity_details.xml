@@ -18,12 +18,10 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageView_image"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/image_size"
             android:layout_margin="@dimen/margin16"
-            android:layout_maxHeight="@dimen/image_size"
-            android:layout_maxWidth="@dimen/image_size"
             android:src="@drawable/ic_launcher_background" />
 
         <LinearLayout
@@ -46,6 +44,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:autoLink="web"
                 android:text="web" />
 
             <TextView
@@ -53,6 +52,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:autoLink="email"
                 android:text="email" />
 
             <TextView
@@ -60,7 +60,15 @@
                 android:layout_width="wrap_content"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+                android:autoLink="phone"
                 android:text="tel" />
+
+            <TextView
+                android:id="@+id/textView_address"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="address" />
 
         </LinearLayout>
 
