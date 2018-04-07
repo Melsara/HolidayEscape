@@ -3,6 +3,9 @@ package eu.escapeadvisor.holidayescape;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.support.v7.app.AppCompatActivity;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -22,7 +25,7 @@ import static eu.escapeadvisor.holidayescape.GlobalConstants.NAME_KEY;
 import static eu.escapeadvisor.holidayescape.GlobalConstants.TEL_KEY;
 import static eu.escapeadvisor.holidayescape.GlobalConstants.URL_KEY;
 
-public class DetailsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class DetailsActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     private String url;
     private String name;
@@ -40,9 +43,12 @@ public class DetailsActivity extends FragmentActivity implements OnMapReadyCallb
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_details);
 
+        /*Calling back on actionBar*/
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
         try {
             // Loading map
-            initilizeMap();
+            initializeMap();
 
         } catch (Exception e) {
             e.printStackTrace();
@@ -61,11 +67,34 @@ public class DetailsActivity extends FragmentActivity implements OnMapReadyCallb
         description = bundle.getString(DESC_KEY);
         address = bundle.getString(ADDRESS_KEY);
         setPosition(lat, lng);
+        setContentView();
     }
 
-    public void initilizeMap () {
-            MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
+    private void initializeMap () {
+        MapFragment mapFragment = (MapFragment) getFragmentManager().findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
+    }
+
+    private LatLng setPosition(double lat, double lng) {
+        position = new LatLng(lat, lng);
+        return position;
+    }
+
+    private void setContentView (){
+        TextView textView_name = findViewById(R.id.textView_name);
+        textView_name.setText(name);
+        TextView textView_url = findViewById(R.id.textView_web);
+        textView_url.setText(url);
+        TextView textView_email = findViewById(R.id.textView_email);
+        textView_email.setText(email);
+        TextView textView_tel = findViewById(R.id.textView_tel);
+        textView_tel.setText(tel);
+        TextView textView_address = findViewById(R.id.textView_address);
+        textView_address.setText(address);
+        TextView textView_description = findViewById(R.id.textView_desc);
+        textView_description.setText(description);
+        ImageView imageView_image = findViewById(R.id.imageView_image);
+        imageView_image.setImageResource(image);
     }
 
     @Override
@@ -85,14 +114,9 @@ public class DetailsActivity extends FragmentActivity implements OnMapReadyCallb
         map.getUiSettings().setRotateGesturesEnabled(true);
     }
 
-    private LatLng setPosition(double lat, double lng) {
-        position = new LatLng(lat, lng);
-        return position;
-    }
-
     @Override
     protected void onResume() {
         super.onResume();
-        initilizeMap();
+        initializeMap();
     }
 }

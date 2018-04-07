@@ -40,7 +40,8 @@
             android:label="@string/title_activity_poi_detail"></activity>
         <activity
             android:name=".DetailsActivity"
-            android:label="@string/title_activity_poi_detail"></activity>
+            android:label="@string/title_activity_poi_detail"
+            android:parentActivityName=".MainActivity"></activity>
     </application>
 
 </manifest>
