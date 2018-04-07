@@ -39,33 +39,25 @@
 
             <TextView
                 android:id="@+id/textView_web"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                style="@style/textStyle"
                 android:autoLink="web"
                 android:text="web" />
 
             <TextView
                 android:id="@+id/textView_email"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                style="@style/textStyle"
                 android:autoLink="email"
                 android:text="email" />
 
             <TextView
                 android:id="@+id/textView_tel"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                style="@style/textStyle"
                 android:autoLink="phone"
                 android:text="tel" />
 
             <TextView
                 android:id="@+id/textView_address"
-                android:layout_width="wrap_content"
-                android:layout_height="0dp"
-                android:layout_weight="1"
+                style="@style/textStyle"
                 android:text="address" />
 
         </LinearLayout>
