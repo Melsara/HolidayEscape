@@ -39,6 +39,7 @@ public class PoiAdapter extends ArrayAdapter<POI>{
         TextView addressTextView = (TextView) listItemView.findViewById(R.id.address_textView);
         addressTextView.setText(currentPoi.getAddress());
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.imageView);
+        imageView.setImageResource(currentPoi.getImage());
 
 /*        View textRoot = listItemView.findViewById(R.id.textRoot);
         int color = ContextCompat.getColor(getContext(), mColorResourceId);

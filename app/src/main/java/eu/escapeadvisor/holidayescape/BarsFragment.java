@@ -18,7 +18,7 @@ import java.util.ArrayList;
 
 public class BarsFragment extends Fragment {
 
-    URL url1 = new URL("http://www.google.com/");
+    URL url1 = new URL("https://www.elgauchocagliari.com/");
     Context mContext;
 
 
@@ -34,8 +34,8 @@ public class BarsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.activity_poi_list, container, false);
         final ArrayList<POI> bars = new ArrayList<>();
 
-        bars.add(new POI(mContext.getResources().getString(R.string.category_bars),"Bar1", url1, "email", "000000000",
-                39.230469, 9.111982, R.drawable.ic_launcher_background, "Lorem ipsum","address" ));
+        bars.add(new POI(mContext.getResources().getString(R.string.category_bars),getString(R.string.bar_name1), url1, getString(R.string.bar_email1), getString(R.string.bar_tel1),
+                39.219303, 9.106513, R.drawable.gaucho, getString(R.string.bar_desc1),getString(R.string.bar_address1)));
 
         PoiAdapter barsAdapter = new PoiAdapter(getActivity(), bars);
         ListView listView = (ListView) rootView.findViewById(R.id.list);
