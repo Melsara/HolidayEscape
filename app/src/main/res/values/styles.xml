@@ -24,6 +24,7 @@
         <item name="android:textSize">@dimen/title_size</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_marginBottom">@dimen/margin8</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
     </style>
 
     <style name="textStyle">
@@ -31,7 +32,7 @@
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:textSize">@dimen/text_size</item>
-        <item name="android:layout_marginBottom">@dimen/margin4</item>
+        <item name="android:layout_marginBottom">@dimen/margin8</item>
     </style>
 
 

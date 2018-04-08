@@ -8,54 +8,47 @@
         android:id="@+id/imageView"
         android:layout_width="@dimen/list_item_height"
         android:layout_height="@dimen/list_item_height"
+        android:layout_marginBottom="@dimen/margin8"
+        android:layout_marginLeft="@dimen/margin8"
         android:layout_marginRight="@dimen/margin16"
+        android:layout_marginTop="@dimen/margin8"
         android:src="@mipmap/ic_launcher" />
 
     <RelativeLayout
         android:id="@+id/textRoot"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/list_item_height"
+        android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/margin8"
         android:layout_toRightOf="@id/imageView"
         android:orientation="vertical"
         android:paddingLeft="@dimen/margin16">
 
-<!--        <TextView
-            android:id="@+id/category_textView"
-            android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:layout_weight="1"
-            android:gravity="bottom"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white"
-            android:textStyle="bold"/>-->
-
         <TextView
             android:id="@+id/name_textView"
             android:layout_width="match_parent"
-            android:layout_height="44dp"
-            android:layout_weight="1"
+            android:layout_height="wrap_content"
             android:gravity="bottom"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@color/primaryText"/>
+            android:textColor="@color/colorPrimaryDark" />
 
         <TextView
             android:id="@+id/address_textView"
             android:layout_width="match_parent"
             android:layout_height="44dp"
             android:layout_below="@id/name_textView"
-            android:layout_weight="1"
+            android:layout_marginBottom="@dimen/margin8"
             android:gravity="top"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@color/secondaryText"/>
+            android:textColor="@color/secondaryText" />
 
     </RelativeLayout>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/dividerColor"/>
+        android:background="@color/dividerColor" />
 
 </RelativeLayout>

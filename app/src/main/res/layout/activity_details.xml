@@ -1,75 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/details"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <include
-        android:id="@+id/map"
-        layout="@layout/fragment_map"
+    <RelativeLayout
+        android:id="@+id/details"
         android:layout_width="match_parent"
-        android:layout_height="300dp" />
+        android:layout_height="match_parent">
 
-    <LinearLayout
-        android:id="@+id/root_details"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/map"
-        android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/imageView_image"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/image_size"
-            android:layout_margin="@dimen/margin16"
-            android:src="@drawable/ic_launcher_background" />
+        <include
+            android:id="@+id/map"
+            layout="@layout/fragment_map"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/image_size"
-            android:layout_marginBottom="@dimen/margin16"
-            android:layout_marginRight="@dimen/margin16"
-            android:layout_marginTop="@dimen/margin16"
-            android:orientation="vertical">
+            android:id="@+id/root_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/map"
+            android:orientation="horizontal">
 
-            <TextView
-                android:id="@+id/textView_name"
-                style="@style/nameStyle"
-                android:text="name" />
+            <ImageView
+                android:id="@+id/imageView_image"
+                android:layout_width="@dimen/image_size"
+                android:layout_height="@dimen/image_size"
+                android:layout_marginLeft="@dimen/margin16"
+                android:layout_marginRight="@dimen/margin16"
+                android:layout_marginTop="@dimen/margin16"
+                android:src="@drawable/ic_launcher_background" />
 
-            <TextView
-                android:id="@+id/textView_web"
-                style="@style/textStyle"
-                android:autoLink="web"
-                android:text="web" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin16"
+                android:layout_marginTop="@dimen/margin16"
+                android:orientation="vertical">
 
-            <TextView
-                android:id="@+id/textView_email"
-                style="@style/textStyle"
-                android:autoLink="email"
-                android:text="email" />
+                <TextView
+                    android:id="@+id/textView_name"
+                    style="@style/nameStyle" />
 
-            <TextView
-                android:id="@+id/textView_tel"
-                style="@style/textStyle"
-                android:autoLink="phone"
-                android:text="tel" />
+                <TextView
+                    android:id="@+id/textView_web"
+                    style="@style/textStyle"
+                    android:autoLink="web" />
 
-            <TextView
-                android:id="@+id/textView_address"
-                style="@style/textStyle"
-                android:text="address" />
+                <TextView
+                    android:id="@+id/textView_email"
+                    style="@style/textStyle"
+                    android:autoLink="email" />
+
+                <TextView
+                    android:id="@+id/textView_tel"
+                    style="@style/textStyle"
+                    android:autoLink="phone" />
+
+                <TextView
+                    android:id="@+id/textView_address"
+                    style="@style/textStyle" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/textView_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/root_details"
+            android:layout_marginBottom="@dimen/margin16"
+            android:layout_marginLeft="@dimen/margin16"
+            android:layout_marginRight="@dimen/margin16"
+            android:layout_marginTop="@dimen/margin8" />
 
-    <TextView
-        android:id="@+id/textView_desc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/root_details"
-        android:layout_margin="@dimen/margin16"
-        android:text="Lorem iPsum" />
+    </RelativeLayout>
 
-</RelativeLayout>
+</ScrollView>
