@@ -8,9 +8,15 @@
     <string name="category_culturalPlaces">Cultural Places</string>
     <string name="bar_name1">El Gaucho</string>
     <string name="bar_url1">https://www.elgauchocagliari.com/</string>
-    <string name="bar_email1">Not available</string>
+    <string name="bar_email1">Email not available</string>
     <string name="bar_tel1">+39 346.3073322</string>
     <string name="bar_desc1">Gianna, Sergio e sua moglie Valentina, aprono a Cagliari nel 1997, El Gaucho, che negli anni cresce grazie alla notorietà data da i propri clienti, assidui frequentatori del ristorante a pranzo, con la linea di pasti veloci e la qualità argentina, proposta più ampiamente a cena.
 Hanno tre priorità : cucinare buono, servire velocemente e garantire la qualità su i propri prodotti. Da allora ad oggi il metodo è sempre quello: impegno quotidiano d\’amore e buonumore, una stretta di mano appaga sempre questa passione di famiglia.</string>
-    <string name="bar_address1">via Asproni, 9 09123, Cagliari</string>
+    <string name="bar_address1">Via Asproni, 9, 09123, Cagliari CA, Italy</string>
+    <string name="bar_name2">Il Bambù</string>
+    <string name="bar_url2">Website not available</string>
+    <string name="bar_email2">Email not available</string>
+    <string name="bar_tel2">+39 070 494630</string>
+    <string name="bar_desc2">Pizzeria e ristorante storico di Cagliari, sempre ottimo. Gli antipasti misti di mare son consigliati, porzioni abbondanti e sfiziose delle più svariate specialità locali. È consigliata la prenotazione anche durante la settimana, essendo il posto molto gettonato anche tra i locali.</string>
+    <string name="bar_address2">Via S. Giuliano, 7, 09129 Cagliari CA, Italy</string>
 </resources>

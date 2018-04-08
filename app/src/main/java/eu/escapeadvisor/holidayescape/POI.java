@@ -6,7 +6,7 @@ import java.net.URL;
 public class POI {
 
     private String mName;
-    private URL mUrl;
+    private String mStringUrl;
     private String mEmail;
     private String mTel;
     private double mLat;
@@ -30,10 +30,10 @@ public class POI {
      * @param address
      */
 
-    public POI (String category, String name, URL url, String email, String tel, double lat, double lng, int image, String description, String address) {
+    public POI (String category, String name, String url, String email, String tel, double lat, double lng, int image, String description, String address) {
         mCategory = category;
         mName = name;
-        mUrl = url;
+        mStringUrl = url;
         mEmail = email;
         mTel = tel;
         mLat = lat;
@@ -51,8 +51,8 @@ public class POI {
         return mName;
     }
 
-    public URL getUrl() {
-        return mUrl;
+    public String getUrl() {
+        return mStringUrl;
     }
 
     public String getEmail() {

@@ -16,10 +16,9 @@ import java.net.URL;
 import java.util.ArrayList;
 
 public class ErFragment extends Fragment {
-    URL url1 = new URL("http://www.google.com/");
     Context mContext;
 
-    public ErFragment() throws MalformedURLException {
+    public ErFragment() {
         // Required empty public constructor
     }
 
@@ -31,7 +30,7 @@ public class ErFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.activity_poi_list, container, false);
         final ArrayList<POI> ers = new ArrayList<>();
 
-        ers.add(new POI(mContext.getResources().getString(R.string.category_er),"ER1", url1, "email", "000000000",
+        ers.add(new POI(mContext.getResources().getString(R.string.category_er),"ER1", "url", "email", "000000000",
                 0, 0, R.drawable.ic_launcher_background, "Lorem ipsum","address" ));
 
         PoiAdapter ersAdapter = new PoiAdapter(getActivity(), ers);

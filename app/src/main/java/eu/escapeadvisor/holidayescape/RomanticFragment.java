@@ -16,10 +16,9 @@ import java.net.URL;
 import java.util.ArrayList;
 
 public class RomanticFragment extends Fragment {
-    URL url1 = new URL("http://www.google.com/");
     Context mContext;
 
-    public RomanticFragment() throws MalformedURLException {
+    public RomanticFragment() {
         // Required empty public constructor
     }
 
@@ -31,7 +30,7 @@ public class RomanticFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.activity_poi_list, container, false);
         final ArrayList<POI> romantics = new ArrayList<>();
 
-        romantics.add(new POI(mContext.getResources().getString(R.string.category_romanticPlaces),"Romantic1", url1, "email", "000000000",
+        romantics.add(new POI(mContext.getResources().getString(R.string.category_romanticPlaces),"Romantic1", "url", "email", "000000000",
                 0, 0, R.drawable.ic_launcher_background, "Lorem ipsum","address" ));
 
         PoiAdapter romanticsAdapter = new PoiAdapter(getActivity(), romantics);
