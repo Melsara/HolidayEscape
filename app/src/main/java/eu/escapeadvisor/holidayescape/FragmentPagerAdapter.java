@@ -10,12 +10,12 @@ import java.net.MalformedURLException;
 public class FragmentPagerAdapter extends android.support.v4.app.FragmentPagerAdapter {
 
     Context mContext;
-    String [] tabTitles;
+    String[] tabTitles;
 
     public FragmentPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
         mContext = context;
-        tabTitles = new String[] {mContext.getResources().getString(R.string.category_bars), mContext.getResources().getString(R.string.category_er),
+        tabTitles = new String[]{mContext.getResources().getString(R.string.category_bars), mContext.getResources().getString(R.string.category_er),
                 mContext.getResources().getString(R.string.category_romanticPlaces), mContext.getResources().getString(R.string.category_culturalPlaces)};
 
     }
@@ -25,44 +25,28 @@ public class FragmentPagerAdapter extends android.support.v4.app.FragmentPagerAd
         switch (position) {
 
             case 1:
-                try {
-                    return new ErFragment();
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
-                }
+                return new ErFragment();
 
             case 2:
-                try {
-                    return new RomanticFragment();
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
-                }
+                return new RomanticFragment();
 
             case 3:
-                try {
-                    return new CulturalFragment();
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
-                }
-
+                return new CulturalFragment();
             default:
-                try {
-                    return new BarsFragment();
-                } catch (MalformedURLException e) {
-                    e.printStackTrace();
-                }
+
+                return new BarsFragment();
         }
-        return null;
+
     }
 
-    @Override
-    public int getCount() {
-        return 4;
-    }
+        @Override
+        public int getCount () {
+            return 4;
+        }
 
-    @Nullable
-    @Override
-    public CharSequence getPageTitle(int position) {
-        return tabTitles[position];
+        @Nullable
+        @Override
+        public CharSequence getPageTitle ( int position){
+            return tabTitles[position];
+        }
     }
-}

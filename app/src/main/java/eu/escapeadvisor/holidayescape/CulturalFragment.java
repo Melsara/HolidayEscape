@@ -19,10 +19,9 @@ import java.util.ArrayList;
  * A simple {@link Fragment} subclass.
  */
 public class CulturalFragment extends Fragment {
-    URL url1 = new URL("http://www.google.com/");
     Context mContext;
 
-    public CulturalFragment() throws MalformedURLException {
+    public CulturalFragment() {
         // Required empty public constructor
     }
 
@@ -34,7 +33,7 @@ public class CulturalFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.activity_poi_list, container, false);
         final ArrayList<POI> culturals = new ArrayList<>();
 
-        culturals.add(new POI(mContext.getResources().getString(R.string.category_culturalPlaces),"Cultural1", url1, "email", "000000000",
+        culturals.add(new POI(mContext.getResources().getString(R.string.category_culturalPlaces),"Cultural1", "url", "email", "000000000",
                 0, 0, R.drawable.ic_launcher_background, "Lorem ipsum","address" ));
 
         PoiAdapter culturalsAdapter = new PoiAdapter(getActivity(), culturals);

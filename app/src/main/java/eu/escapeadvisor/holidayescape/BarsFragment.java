@@ -18,11 +18,10 @@ import java.util.ArrayList;
 
 public class BarsFragment extends Fragment {
 
-    URL url1 = new URL("https://www.elgauchocagliari.com/");
     Context mContext;
 
 
-    public BarsFragment() throws MalformedURLException {
+    public BarsFragment() {
         // Required empty public constructor
     }
 
@@ -34,8 +33,10 @@ public class BarsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.activity_poi_list, container, false);
         final ArrayList<POI> bars = new ArrayList<>();
 
-        bars.add(new POI(mContext.getResources().getString(R.string.category_bars),getString(R.string.bar_name1), url1, getString(R.string.bar_email1), getString(R.string.bar_tel1),
+        bars.add(new POI(mContext.getResources().getString(R.string.category_bars),getString(R.string.bar_name1), getString(R.string.bar_url1), getString(R.string.bar_email1), getString(R.string.bar_tel1),
                 39.219303, 9.106513, R.drawable.gaucho, getString(R.string.bar_desc1),getString(R.string.bar_address1)));
+        bars.add(new POI(mContext.getResources().getString(R.string.category_bars),getString(R.string.bar_name2), getString(R.string.bar_url2), getString(R.string.bar_email2), getString(R.string.bar_tel2),
+                39.221331, 9.136219, R.drawable.bamboo, getString(R.string.bar_desc2),getString(R.string.bar_address2)));
 
         PoiAdapter barsAdapter = new PoiAdapter(getActivity(), bars);
         ListView listView = (ListView) rootView.findViewById(R.id.list);
@@ -46,10 +47,7 @@ public class BarsFragment extends Fragment {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 POI bar = (POI) adapterView.getItemAtPosition(i);
-                URL url = url1;
-                for (int position = i; position > 1; position++) {
-                    url = bar.getUrl();
-                }
+                String url = bar.getUrl();
                 String category = bar.getCategory();
                 String name = bar.getName();
                 String email = bar.getEmail();
@@ -63,7 +61,7 @@ public class BarsFragment extends Fragment {
                 Intent openBarDetail = new Intent(getContext(), DetailsActivity.class);
 
                 Bundle bundle = new Bundle();
-                bundle.putString(GlobalConstants.URL_KEY, url.toString());
+                bundle.putString(GlobalConstants.URL_KEY, url);
                 bundle.putString(GlobalConstants.NAME_KEY, name);
                 bundle.putString(GlobalConstants.EMAIL_KEY, email);
                 bundle.putString(GlobalConstants.TEL_KEY, tel);
