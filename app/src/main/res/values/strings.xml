@@ -24,5 +24,13 @@ Hanno tre priorità : cucinare buono, servire velocemente e garantire la qualit�
     <string name="bar_email3">Email not available</string>
     <string name="bar_tel3">+39 340 078 8929</string>
     <string name="bar_desc3">Birroteca, paninoteca, beershop. Impianto spine con 12 vie e oltre 150 bottigliette. Più di 50 panini. Operativi dal 1984.</string>
-    <string name="bar_address3">Il Merlo Parlante, Via Porto Scalas, 69, 09123 Cagliari CA, Italy</string>
+    <string name="bar_address3">Via Porto Scalas, 69, 09123 Cagliari CA, Italy</string>
+    <string name="bar_name4">Old Square</string>
+    <string name="bar_url4">http://www.oldsquare.it/</string>
+    <string name="bar_email4">info@oldsquare.it</string>
+    <string name="bar_tel4">+39 070 658099</string>
+    <string name="bar_desc4">L\’Old Square è un irish pub e steak house caratterizzato da proposte che spaziano dalla cucina internazionale ai prodotti tipici della terra in cui si trova, la Sardegna.
+        \nÈ una birreria Guinness, Paulaner, Thurn und Taxis, Barley, Grinbergen, e ha a disposizione anche una vasta scelta di artigianali, la cui carta si rinnova ogni stagione.\n
+        Propone concerti, spettacoli e dj set ogni weekend. È aperto dalle 11 del mattino con cucina disponibile “non stop” da mezzogiorno a mezzanotte. 365 giorni all\’anno.</string>
+    <string name="bar_address4">Corso Vittorio Emanuele II, 44, 09124 Cagliari CA, Italy</string>
 </resources>
