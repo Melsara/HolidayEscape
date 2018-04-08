@@ -50,4 +50,13 @@ Hanno tre priorità : cucinare buono, servire velocemente e garantire la qualit�
     <string name="er_desc2">Trasportati in una realtà simulata, vi troverete immersi in scenari dedicati. Ogni room ha una propria narrazione, ambientazione e logica. Ogni room nasconde un mistero da svelare.
         Scegliete la vostra avventura e varcate la soglia per affrontare la sfida.</string>
     <string name="er_address2">Via Sidney Sonnino, 208, 09127 Cagliari CA, Italy</string>
+    <string name="er_name3">Escape the room</string>
+    <string name="er_url3">http://www.escapetheroom.it/</string>
+    <string name="er_email3">escapetheroomcagliari@gmail.com</string>
+    <string name="er_tel3">+39 331 229 0717</string>
+    <string name="er_desc3">In piazza Garibaldi 21 trovate un\’Escape Room ad alto impatto emozionale e coinvolgente, ispirata alla serie American Horror House: Murder House, ossia la casa degli omicidi.
+        Murder House è la dimora in stile vittoriano dove si trasferisce la famiglia Harmon nella prima stagione della serie antologica American Horror Story. Venne costruita nel 1922 dal folle medico delle star di Hollywood, il dott. Montgomery, per la moglie Nora.
+        Esperimenti sugli animali in cantina, pratica di aborti clandestini e un bambino ritrovato dalla polizia a pezzi e poi riassemblato: da qui nasce la maledizione e la storia originale che vi aspetta.
+    Gioco adrenalinico ma adatto a tutti (al suo interno non ci sono figuranti). Basta lavorare di logica e intuizione. Non occorre aver visto la serie tv (ma non potete perdervela). Quello che c\’è da sapere ve lo diremo noi.</string>
+    <string name="er_address3">Piazza Giuseppe Garibaldi, 21, 09127 Cagliari CA, Italy</string>
 </resources>
