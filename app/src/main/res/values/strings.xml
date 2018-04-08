@@ -19,4 +19,10 @@ Hanno tre priorità : cucinare buono, servire velocemente e garantire la qualit�
     <string name="bar_tel2">+39 070 494630</string>
     <string name="bar_desc2">Pizzeria e ristorante storico di Cagliari, sempre ottimo. Gli antipasti misti di mare son consigliati, porzioni abbondanti e sfiziose delle più svariate specialità locali. È consigliata la prenotazione anche durante la settimana, essendo il posto molto gettonato anche tra i locali.</string>
     <string name="bar_address2">Via S. Giuliano, 7, 09129 Cagliari CA, Italy</string>
+    <string name="bar_name3">Birroteca Al Merlo Parlante</string>
+    <string name="bar_url3">https://www.facebook.com/birrotecamerlo/</string>
+    <string name="bar_email3">Email not available</string>
+    <string name="bar_tel3">+39 340 078 8929</string>
+    <string name="bar_desc3">Birroteca, paninoteca, beershop. Impianto spine con 12 vie e oltre 150 bottigliette. Più di 50 panini. Operativi dal 1984.</string>
+    <string name="bar_address3">Il Merlo Parlante, Via Porto Scalas, 69, 09123 Cagliari CA, Italy</string>
 </resources>
