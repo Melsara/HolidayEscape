@@ -39,6 +39,8 @@ public class BarsFragment extends Fragment {
                 39.221331, 9.136219, R.drawable.bamboo, getString(R.string.bar_desc2),getString(R.string.bar_address2)));
         bars.add(new POI(mContext.getResources().getString(R.string.category_bars),getString(R.string.bar_name3), getString(R.string.bar_url3), getString(R.string.bar_email3), getString(R.string.bar_tel3),
                 39.218601, 9.110405, R.drawable.merlo, getString(R.string.bar_desc3),getString(R.string.bar_address3)));
+        bars.add(new POI(mContext.getResources().getString(R.string.category_bars),getString(R.string.bar_name4), getString(R.string.bar_url4), getString(R.string.bar_email4), getString(R.string.bar_tel4),
+                39.217643, 9.112211, R.drawable.oldsquare, getString(R.string.bar_desc4),getString(R.string.bar_address4)));
 
         PoiAdapter barsAdapter = new PoiAdapter(getActivity(), bars);
         ListView listView = (ListView) rootView.findViewById(R.id.list);
