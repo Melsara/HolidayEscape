@@ -37,6 +37,8 @@ public class ErFragment extends Fragment {
                 39.218306, 9.121497, R.drawable.captivita, getString(R.string.er_desc2),getString(R.string.er_address2) ));
         ers.add(new POI(mContext.getResources().getString(R.string.category_er),getString(R.string.er_name3), getString(R.string.er_url3), getString(R.string.er_email3), getString(R.string.er_tel3),
                 39.219073, 9.122130, R.drawable.escapetheroom, getString(R.string.er_desc3),getString(R.string.er_address3) ));
+        ers.add(new POI(mContext.getResources().getString(R.string.category_er),getString(R.string.er_name4), getString(R.string.er_url4), getString(R.string.er_email4), getString(R.string.er_tel4),
+                39.35829, 9.004932, R.drawable.alcatraz, getString(R.string.er_desc4),getString(R.string.er_address4) ));
 
         PoiAdapter ersAdapter = new PoiAdapter(getActivity(), ers);
         ListView listView = (ListView) rootView.findViewById(R.id.list);
