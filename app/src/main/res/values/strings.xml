@@ -34,7 +34,7 @@ Hanno tre priorità : cucinare buono, servire velocemente e garantire la qualit�
         Propone concerti, spettacoli e dj set ogni weekend. È aperto dalle 11 del mattino con cucina disponibile “non stop” da mezzogiorno a mezzanotte. 365 giorni all\’anno.</string>
     <string name="bar_address4">Corso Vittorio Emanuele II, 44, 09124 Cagliari CA, Italy</string>
     <string name="er_name1">enTRAPment</string>
-    <string name="er_url1">https://www.entrapment.it//</string>
+    <string name="er_url1">https://www.entrapment.it/</string>
     <string name="er_email1">info@entrapment.it</string>
     <string name="er_tel1">+39 347 2199654</string>
     <string name="er_desc1">enTRAPment è il più innovativo locale di Cagliari dedicato alle Escape Room, e non solo. Probabilmente ti è capitato di giocare un’escape room sul tuo smartphone o magari di vedere qualche bellissimo film giallo, horror o di azione.
@@ -43,4 +43,11 @@ Hanno tre priorità : cucinare buono, servire velocemente e garantire la qualit�
         Si, perchè ogni stanza ha una storia! Come i protagonisti di un film conoscerete un antefatto che vi ha portato a essere in quel luogo, ma solo giocando e procedendo nell\’avventura potrete scoprire di più, in una straordinaria avventura ricca di colpi di scena.
         Nei 60 minuti di gioco dovrete esplorare l\’ambiente che vi circonda, trovare indizi, capire come funzionano i meccanismi che incontrerete, collaborare con la vostra squadra per risolvere problemi o compiere azioni coordinate, passarvi oggetti, e analizzare tutto quello che vi circonda per svelare misteri e riuscire a fuggire.</string>
     <string name="er_address1">Via S. Lucifero, 17, 09125 Cagliari CA, Italy</string>
+    <string name="er_name2">Captivita</string>
+    <string name="er_url2">http://www.captivita.com/</string>
+    <string name="er_email2">info@captivita.com</string>
+    <string name="er_tel2">+39 340 5472022</string>
+    <string name="er_desc2">Trasportati in una realtà simulata, vi troverete immersi in scenari dedicati. Ogni room ha una propria narrazione, ambientazione e logica. Ogni room nasconde un mistero da svelare.
+        Scegliete la vostra avventura e varcate la soglia per affrontare la sfida.</string>
+    <string name="er_address2">Via Sidney Sonnino, 208, 09127 Cagliari CA, Italy</string>
 </resources>
