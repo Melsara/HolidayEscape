@@ -11,7 +11,7 @@
     <string name="bar_email1">Email not available</string>
     <string name="bar_tel1">+39 346.3073322</string>
     <string name="bar_desc1">Gianna, Sergio e sua moglie Valentina, aprono a Cagliari nel 1997, El Gaucho, che negli anni cresce grazie alla notorietà data da i propri clienti, assidui frequentatori del ristorante a pranzo, con la linea di pasti veloci e la qualità argentina, proposta più ampiamente a cena.
-Hanno tre priorità : cucinare buono, servire velocemente e garantire la qualità su i propri prodotti. Da allora ad oggi il metodo è sempre quello: impegno quotidiano d\’amore e buonumore, una stretta di mano appaga sempre questa passione di famiglia.</string>
+    Hanno tre priorità : cucinare buono, servire velocemente e garantire la qualità su i propri prodotti. Da allora ad oggi il metodo è sempre quello: impegno quotidiano d\’amore e buonumore, una stretta di mano appaga sempre questa passione di famiglia.</string>
     <string name="bar_address1">Via Asproni, 9, 09123, Cagliari CA, Italy</string>
     <string name="bar_name2">Il Bambù</string>
     <string name="bar_url2">Website not available</string>
@@ -38,7 +38,7 @@ Hanno tre priorità : cucinare buono, servire velocemente e garantire la qualit�
     <string name="er_email1">info@entrapment.it</string>
     <string name="er_tel1">+39 347 2199654</string>
     <string name="er_desc1">enTRAPment è il più innovativo locale di Cagliari dedicato alle Escape Room, e non solo. Probabilmente ti è capitato di giocare un’escape room sul tuo smartphone o magari di vedere qualche bellissimo film giallo, horror o di azione.
-    Le escape room dal vivo sono un mix straordinario di queste e altre esperienze: una attività immersiva che vede te, i tuoi amici, la tua famiglia, “intrappolati” all\’interno di una stanza totalmente scenografata e dalla quale dovete trovare il modo di uscire.
+        Le escape room dal vivo sono un mix straordinario di queste e altre esperienze: una attività immersiva che vede te, i tuoi amici, la tua famiglia, “intrappolati” all\’interno di una stanza totalmente scenografata e dalla quale dovete trovare il modo di uscire.
         Le stanze (escape room) possono riprodurre ambienti di ogni tipo, reali o  immaginari, e le storie possono essere ambientate in ogni tempo o luogo.
         Si, perchè ogni stanza ha una storia! Come i protagonisti di un film conoscerete un antefatto che vi ha portato a essere in quel luogo, ma solo giocando e procedendo nell\’avventura potrete scoprire di più, in una straordinaria avventura ricca di colpi di scena.
         Nei 60 minuti di gioco dovrete esplorare l\’ambiente che vi circonda, trovare indizi, capire come funzionano i meccanismi che incontrerete, collaborare con la vostra squadra per risolvere problemi o compiere azioni coordinate, passarvi oggetti, e analizzare tutto quello che vi circonda per svelare misteri e riuscire a fuggire.</string>
@@ -57,6 +57,15 @@ Hanno tre priorità : cucinare buono, servire velocemente e garantire la qualit�
     <string name="er_desc3">In piazza Garibaldi 21 trovate un\’Escape Room ad alto impatto emozionale e coinvolgente, ispirata alla serie American Horror House: Murder House, ossia la casa degli omicidi.
         Murder House è la dimora in stile vittoriano dove si trasferisce la famiglia Harmon nella prima stagione della serie antologica American Horror Story. Venne costruita nel 1922 dal folle medico delle star di Hollywood, il dott. Montgomery, per la moglie Nora.
         Esperimenti sugli animali in cantina, pratica di aborti clandestini e un bambino ritrovato dalla polizia a pezzi e poi riassemblato: da qui nasce la maledizione e la storia originale che vi aspetta.
-    Gioco adrenalinico ma adatto a tutti (al suo interno non ci sono figuranti). Basta lavorare di logica e intuizione. Non occorre aver visto la serie tv (ma non potete perdervela). Quello che c\’è da sapere ve lo diremo noi.</string>
+        Gioco adrenalinico ma adatto a tutti (al suo interno non ci sono figuranti). Basta lavorare di logica e intuizione. Non occorre aver visto la serie tv (ma non potete perdervela). Quello che c\’è da sapere ve lo diremo noi.</string>
     <string name="er_address3">Piazza Giuseppe Garibaldi, 21, 09127 Cagliari CA, Italy</string>
+    <string name="er_name4">Alcatraz Escape Room</string>
+    <string name="er_url4">http://www.alcatrazescaperoom.it/</string>
+    <string name="er_email4">alcatrazescaperoom@gmail.com</string>
+    <string name="er_tel4">+39 342 0559167</string>
+    <string name="er_desc4">Focalizzate tutto ciò che vi circonda, non perdete di vista il minimo dettaglio.
+        Una buona dose di memoria, freddezza e ingegno saranno gli ingredienti giusti per poter uscire entro un\’ora da una stanza piena zeppa di enigmi e indizi.
+        Bianconiglio, Brucaliffo, Stregatto, il Cappellaio Matto e la Regina di Cuori, vi aspettano per provare un viaggio in un luogo unico al mondo, una terra colma di meraviglie mistero e pericolo.\n
+        “Si dice che per sopravvivere qui bisogna essere matti come un cappellaio.”\n(Lewis Carroll – Alice in Wonderland)</string>
+    <string name="er_address4">Via Risorgimento, 39, 09026 San Sperate CA, Italy</string>
 </resources>
