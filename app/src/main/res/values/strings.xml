@@ -77,4 +77,10 @@
         Esso rappresenta una delle mete preferite dalle famiglie con bambini e un luogo di svago per gli adulti.
         Molti cittadini cagliaritani si recano in mezzo alla natura per fare attività fisica, poiché il parco di Monte Claro offre percorsi ideali per passeggiate e fare jogging.</string>
     <string name="rom_address1">Via Diego Cadello, 09100 Cagliari CA, Italy</string>
+    <string name="rom_name2">Poetto</string>
+    <string name="rom_url2">https://www.sardegnaturismo.it/en/explore/poetto</string>
+    <string name="rom_email2">Email not available</string>
+    <string name="rom_tel2">Telephone number not available</string>
+    <string name="rom_desc2">Una delle spiagge cittadine più belle e ampie d’Europa, otto chilometri di litorale nel territorio di Cagliari e Quartu Sant\’Elena, dove troverai tutto ciò che desideri: sabbia soffice, mare cristallino, relax, aperitivi, divertimento e attività sportive</string>
+    <string name="rom_address2">Spiaggia del Poetto, 09100 Cagliari CA, Italy</string>
 </resources>

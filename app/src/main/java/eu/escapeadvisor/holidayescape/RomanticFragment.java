@@ -33,6 +33,8 @@ public class RomanticFragment extends Fragment {
 
         romantics.add(new POI(mContext.getResources().getString(R.string.category_romanticPlaces),getString(R.string.rom_name1), getString(R.string.rom_url1), getString(R.string.rom_email1), getString(R.string.rom_tel1),
                 39.234325, 9.115732, R.drawable.monteclaro, getString(R.string.rom_desc1),getString(R.string.rom_address1) ));
+        romantics.add(new POI(mContext.getResources().getString(R.string.category_romanticPlaces),getString(R.string.rom_name2), getString(R.string.rom_url2), getString(R.string.rom_email2), getString(R.string.rom_tel2),
+                39.212952, 9.171051, R.drawable.poetto, getString(R.string.rom_desc2),getString(R.string.rom_address2) ));
 
         PoiAdapter romanticsAdapter = new PoiAdapter(getActivity(), romantics);
         ListView listView = (ListView) rootView.findViewById(R.id.list);
