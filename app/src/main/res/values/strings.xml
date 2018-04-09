@@ -99,4 +99,23 @@
         Il Bastione di Santa Croce, comunemente detto dalla popolazione bastione di “Santu Juanni”, è situato nell\'omonima via, nella zona che in passato ospitava La Giudaria, ovvero il rione ebraico.
         L\'esistenza di quest\'ultimo in Castello è attestata già a partire dal sec. XIII; tuttavia raggiunse la sua massima espansione durante il sec. XV, sotto la dominazione Aragonese. </string>
     <string name="rom_address4">Via Santa Croce, 09124 Cagliari CA, Italy</string>
+    <string name="cult_name1">Museo Archeologico</string>
+    <string name="cult_url1">http://museoarcheocagliari.beniculturali.it/</string>
+    <string name="cult_email1">pm-sar.museoarcheo.cagliari@beniculturali.it</string>
+    <string name="cult_tel1">+39 070 655911</string>
+    <string name="cult_desc1">Il Museo Archeologico Nazionale di Cagliari è un museo liquido, un museo che si trasforma per essere sempre più inclusivo, da ogni punto di vista: fisico, sensoriale, cognitivo, digitale.
+        Un museo per bambini, anziani, stranieri, per diversamente abili, e per questo camaleontico e liquido, in grado di assumere forme e dimensioni differenti per rispondere alle esigenze di ogni suo visitatore.
+        Un museo che usa tecnologie sostenibili e rinnovabili per favorire la conoscenza del suo patrimonio.
+        Un museo che si impegna a crescere insieme ai suoi visitatori, per rendere il racconto del museo un\’esperienza unica che diventa abitudine.
+        Un museo che ha la missione di conservare e raccontare il patrimonio archeologico della Sardegna.</string>
+    <string name="cult_address1">Piazza Arsenale, 1, 09124 Cagliari CA, Italy</string>
+    <string name="cult_name2">Castello di S. Michele</string>
+    <string name="cult_url2">http://www.cagliariturismo.it/en/places/places-of-history-316/monuments-80/castle-of-san-michele-76</string>
+    <string name="cult_email2">castellosanmichele@camuweb.it</string>
+    <string name="cult_tel2">+39 346 667 3657</string>
+    <string name="cult_desc2">Nel 1327, poco dopo la conquista catalana di Cagliari, il castello fu concesso a Berengario Carroz. Successivamente alla caduta del Giudicato d\’Arborea, la funzione difensiva diventò secondaria.
+        Fu allora – nel periodo in cui era feudatario il conte Giacomo Carroz – che il castello diventò una delle più lussuose residenze della Sardegna.
+        L\’ultima esponente della famiglia Carroz, che visse come castellana a San Michele, fu la sfortunata contessa Violante, la quale morì nel 1511 e il castello fu quindi incamerato tra i beni della Corona spagnola.
+        Nel 1652 fu utilizzato come lazzaretto durante l\’epidemia di peste.</string>
+    <string name="cult_address2">Via Bacu Abis, 09121 Cagliari CA, Italy</string>
 </resources>
