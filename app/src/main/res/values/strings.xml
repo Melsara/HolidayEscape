@@ -83,4 +83,12 @@
     <string name="rom_tel2">Telephone number not available</string>
     <string name="rom_desc2">Una delle spiagge cittadine più belle e ampie d’Europa, otto chilometri di litorale nel territorio di Cagliari e Quartu Sant\’Elena, dove troverai tutto ciò che desideri: sabbia soffice, mare cristallino, relax, aperitivi, divertimento e attività sportive</string>
     <string name="rom_address2">Spiaggia del Poetto, 09100 Cagliari CA, Italy</string>
+    <string name="rom_name3">Monte Urpinu</string>
+    <string name="rom_url3">http://www.comune.cagliari.it/portale/ambiente/at01_parco_monte_urpinu;jsessionid=C91FBABE20395F951F97E89625840298</string>
+    <string name="rom_email3">Email not available</string>
+    <string name="rom_tel3">+39 070 6771</string>
+    <string name="rom_desc3">Un\'oasi verde nel centro della città che il Comune acquistò per circa un milione delle vecchie lire nel 1939 e dichiarò primo parco urbano.
+        Il parco è molto frequentato dai cagliaritani ed è decisamente consigliabile a tutti i visitatori che si fermano a Cagliari. Le specie botaniche più diffuse, adatte al clima mediterraneo, sono il pino d\'Aleppo, l\'olivastro, il leccio, il lentisco, il carrubo, l\'alaterno ecc.
+        Percorrendo i 14 km dei viali che attraversano il parco, si ha il piacere di incontrare diverse specie di animali, alcuni dei quali particolarmente abituati alla presenza dell\'uomo.</string>
+    <string name="rom_address3">Viale Europa, 09129 Cagliari CA, Italy</string>
 </resources>
