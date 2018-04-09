@@ -68,4 +68,13 @@
         Bianconiglio, Brucaliffo, Stregatto, il Cappellaio Matto e la Regina di Cuori, vi aspettano per provare un viaggio in un luogo unico al mondo, una terra colma di meraviglie mistero e pericolo.\n
         “Si dice che per sopravvivere qui bisogna essere matti come un cappellaio.”\n(Lewis Carroll – Alice in Wonderland)</string>
     <string name="er_address4">Via Risorgimento, 39, 09026 San Sperate CA, Italy</string>
+    <string name="rom_name1">Monte Claro</string>
+    <string name="rom_url1">http://www.cagliariturismo.it/it/luoghi/i-luoghi-della-natura-318/colli-226/parco-di-monte-claro-62</string>
+    <string name="rom_email1">Email not available</string>
+    <string name="rom_tel1">Telephone number not available</string>
+    <string name="rom_desc1">Il parco di Monte Claro è uno dei parchi pubblici di Cagliari, si estende per diversi ettari e si trova al centro della città. L\'ingresso principale è in via Cadello, un altro ingresso si trova in via Liguria.
+        All\'interno del parco sono presenti strutture ludiche, un laghetto e alcune specie di volatili quali oche e anatre e diverse tartarughe.
+        Esso rappresenta una delle mete preferite dalle famiglie con bambini e un luogo di svago per gli adulti.
+        Molti cittadini cagliaritani si recano in mezzo alla natura per fare attività fisica, poiché il parco di Monte Claro offre percorsi ideali per passeggiate e fare jogging.</string>
+    <string name="rom_address1">Via Diego Cadello, 09100 Cagliari CA, Italy</string>
 </resources>
