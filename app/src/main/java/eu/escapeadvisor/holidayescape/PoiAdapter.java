@@ -15,8 +15,6 @@ import java.util.ArrayList;
 
 public class PoiAdapter extends ArrayAdapter<POI>{
 
-    private int mColorResourceId;
-
     public PoiAdapter (Activity context, ArrayList<POI> pois){
         super(context, 0, pois);
     }
@@ -32,18 +30,12 @@ public class PoiAdapter extends ArrayAdapter<POI>{
                     R.layout.list_item, parent, false);
         }
 
-/*        TextView categoryTextView = (TextView) listItemView.findViewById(R.id.category_textView);
-        categoryTextView.setText(currentPoi.getCategory());*/
         TextView nameTextView = (TextView) listItemView.findViewById(R.id.name_textView);
         nameTextView.setText(currentPoi.getName());
         TextView addressTextView = (TextView) listItemView.findViewById(R.id.address_textView);
         addressTextView.setText(currentPoi.getAddress());
         ImageView imageView = (ImageView) listItemView.findViewById(R.id.imageView);
         imageView.setImageResource(currentPoi.getImage());
-
-/*        View textRoot = listItemView.findViewById(R.id.textRoot);
-        int color = ContextCompat.getColor(getContext(), mColorResourceId);
-        textRoot.setBackgroundColor(color);*/
 
         return listItemView;
     }
