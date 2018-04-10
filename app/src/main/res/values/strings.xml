@@ -117,10 +117,17 @@
         Fu allora – nel periodo in cui era feudatario il conte Giacomo Carroz – che il castello diventò una delle più lussuose residenze della Sardegna.
         L\’ultima esponente della famiglia Carroz, che visse come castellana a San Michele, fu la sfortunata contessa Violante, la quale morì nel 1511 e il castello fu quindi incamerato tra i beni della Corona spagnola.
         Nel 1652 fu utilizzato come lazzaretto durante l\’epidemia di peste.</string>
-        <string name="cult_name3">Ghost Tour</string>
+    <string name="cult_name3">Ghost Tour</string>
     <string name="cult_url3">https://www.facebook.com/CagliariGhostTour/</string>
     <string name="cult_email3">pcart@email.it</string>
     <string name="cult_tel3">+39 345 041 8645</string>
     <string name="cult_desc3">Insolite visite guidate alla scoperta dei misteri, delle leggende spettrali, dei delitti efferati e delle curiosità che riguardano la città di Cagliari.</string>
     <string name="cult_address2">09100 Cagliari CA, Italy</string>
+    <string name="cult_name4">Orto Botanico</string>
+    <string name="cult_url4">http://www.ortobotanicoitalia.it/sardegna/cagliari/</string>
+    <string name="cult_email4">hbk@unica.itt</string>
+    <string name="cult_tel4">+39 070 675 3512</string>
+    <string name="cult_desc4">L\’Orto Botanico di Cagliari, la cui superficie è di circa 5 ha, occupa la porzione inferiore della Valle di Palabanda, il cui fondo si allarga dalla porzione più elevata, maggiormente acclive e accidentata, che ospita le Roccaglie della Biodiversità, sino all\’ingresso situato nella parte più bassa, presso il quale si trova il settore delle Gymnospermae.
+    Il giardino sorge su un\’area archeologica compresa tra l\’Anfiteatro Romano, l\’Orto dei Cappuccini (nel quale vi è una cava utilizzata per la costruzione dell’Anfiteatro, in seguito utilizzata come carcere e infine come cisterna) e la cosiddetta Villa di Tigellio, un\’area archeologica che presenta i resti di alcune domus romane e di un coevo edificio termale.</string>
+    <string name="cult_address4">Viale Sant'Ignazio da Laconi, 11, 09123 Cagliari CA, Italy</string>
 </resources>
