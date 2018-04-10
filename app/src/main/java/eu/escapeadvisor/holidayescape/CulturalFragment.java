@@ -39,9 +39,9 @@ public class CulturalFragment extends Fragment {
         culturals.add(new POI(mContext.getResources().getString(R.string.category_culturalPlaces),getString(R.string.cult_name2), getString(R.string.cult_url2),
                 getString(R.string.cult_email2), getString(R.string.cult_tel2),39.244441, 9.109616, R.drawable.michele, getString(R.string.cult_desc2),getString(R.string.cult_address2)));
         culturals.add(new POI(mContext.getResources().getString(R.string.category_culturalPlaces),getString(R.string.cult_name3), getString(R.string.cult_url3),
-                getString(R.string.cult_email3), getString(R.string.cult_tel3),39.244441, 9.109616, R.drawable.michele, getString(R.string.cult_desc3),getString(R.string.cult_address3)));
+                getString(R.string.cult_email3), getString(R.string.cult_tel3),39.224262, 9.121482, R.drawable.ghost, getString(R.string.cult_desc3),getString(R.string.cult_address3)));
         culturals.add(new POI(mContext.getResources().getString(R.string.category_culturalPlaces),getString(R.string.cult_name4), getString(R.string.cult_url4),
-                getString(R.string.cult_email4), getString(R.string.cult_tel4),39.244441, 9.109616, R.drawable.michele, getString(R.string.cult_desc4),getString(R.string.cult_address4)));
+                getString(R.string.cult_email4), getString(R.string.cult_tel4),39.221315, 9.109939, R.drawable.botanico, getString(R.string.cult_desc4),getString(R.string.cult_address4)));
 
         PoiAdapter culturalsAdapter = new PoiAdapter(getActivity(), culturals);
         ListView listView = (ListView) rootView.findViewById(R.id.list);
