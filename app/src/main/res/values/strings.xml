@@ -117,5 +117,10 @@
         Fu allora – nel periodo in cui era feudatario il conte Giacomo Carroz – che il castello diventò una delle più lussuose residenze della Sardegna.
         L\’ultima esponente della famiglia Carroz, che visse come castellana a San Michele, fu la sfortunata contessa Violante, la quale morì nel 1511 e il castello fu quindi incamerato tra i beni della Corona spagnola.
         Nel 1652 fu utilizzato come lazzaretto durante l\’epidemia di peste.</string>
-    <string name="cult_address2">Via Bacu Abis, 09121 Cagliari CA, Italy</string>
+        <string name="cult_name3">Ghost Tour</string>
+    <string name="cult_url3">https://www.facebook.com/CagliariGhostTour/</string>
+    <string name="cult_email3">pcart@email.it</string>
+    <string name="cult_tel3">+39 345 041 8645</string>
+    <string name="cult_desc3">Insolite visite guidate alla scoperta dei misteri, delle leggende spettrali, dei delitti efferati e delle curiosità che riguardano la città di Cagliari.</string>
+    <string name="cult_address2">09100 Cagliari CA, Italy</string>
 </resources>
