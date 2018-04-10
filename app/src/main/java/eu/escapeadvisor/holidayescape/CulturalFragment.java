@@ -38,6 +38,10 @@ public class CulturalFragment extends Fragment {
                 getString(R.string.cult_email1), getString(R.string.cult_tel1),39.222399, 9.116647, R.drawable.arch, getString(R.string.cult_desc1),getString(R.string.cult_address1)));
         culturals.add(new POI(mContext.getResources().getString(R.string.category_culturalPlaces),getString(R.string.cult_name2), getString(R.string.cult_url2),
                 getString(R.string.cult_email2), getString(R.string.cult_tel2),39.244441, 9.109616, R.drawable.michele, getString(R.string.cult_desc2),getString(R.string.cult_address2)));
+        culturals.add(new POI(mContext.getResources().getString(R.string.category_culturalPlaces),getString(R.string.cult_name3), getString(R.string.cult_url3),
+                getString(R.string.cult_email3), getString(R.string.cult_tel3),39.244441, 9.109616, R.drawable.michele, getString(R.string.cult_desc3),getString(R.string.cult_address3)));
+        culturals.add(new POI(mContext.getResources().getString(R.string.category_culturalPlaces),getString(R.string.cult_name4), getString(R.string.cult_url4),
+                getString(R.string.cult_email4), getString(R.string.cult_tel4),39.244441, 9.109616, R.drawable.michele, getString(R.string.cult_desc4),getString(R.string.cult_address4)));
 
         PoiAdapter culturalsAdapter = new PoiAdapter(getActivity(), culturals);
         ListView listView = (ListView) rootView.findViewById(R.id.list);
