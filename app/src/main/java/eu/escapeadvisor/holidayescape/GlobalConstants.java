@@ -12,4 +12,5 @@ public interface GlobalConstants {
     String IMAGE_KEY = "image_key";
     String DESC_KEY = "description_key";
     String ADDRESS_KEY = "address_key";
+    String POSITION_KEY = "position_key";
 }

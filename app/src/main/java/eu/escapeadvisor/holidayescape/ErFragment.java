@@ -18,6 +18,7 @@ import java.util.ArrayList;
 
 public class ErFragment extends Fragment {
     Context mContext;
+    int positionTab = 1;
 
     public ErFragment() {
         // Required empty public constructor
@@ -72,6 +73,7 @@ public class ErFragment extends Fragment {
                 bundle.putInt(GlobalConstants.IMAGE_KEY, image);
                 bundle.putString(GlobalConstants.DESC_KEY, description);
                 bundle.putString(GlobalConstants.ADDRESS_KEY, address);
+                bundle.putInt(GlobalConstants.POSITION_KEY, positionTab);
                 openBarDetail.putExtras(bundle);
                 startActivity(openBarDetail);
             }
