@@ -18,6 +18,7 @@ import java.util.ArrayList;
 
 public class RomanticFragment extends Fragment {
     Context mContext;
+    int positionTab = 2;
 
     public RomanticFragment() {
         // Required empty public constructor
@@ -72,6 +73,7 @@ public class RomanticFragment extends Fragment {
                 bundle.putInt(GlobalConstants.IMAGE_KEY, image);
                 bundle.putString(GlobalConstants.DESC_KEY, description);
                 bundle.putString(GlobalConstants.ADDRESS_KEY, address);
+                bundle.putInt(GlobalConstants.POSITION_KEY, positionTab);
                 openBarDetail.putExtras(bundle);
                 startActivity(openBarDetail);
 

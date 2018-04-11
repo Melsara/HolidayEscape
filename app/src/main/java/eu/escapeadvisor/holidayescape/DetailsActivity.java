@@ -22,6 +22,7 @@ import static eu.escapeadvisor.holidayescape.GlobalConstants.IMAGE_KEY;
 import static eu.escapeadvisor.holidayescape.GlobalConstants.LAT_KEY;
 import static eu.escapeadvisor.holidayescape.GlobalConstants.LNG_KEY;
 import static eu.escapeadvisor.holidayescape.GlobalConstants.NAME_KEY;
+import static eu.escapeadvisor.holidayescape.GlobalConstants.POSITION_KEY;
 import static eu.escapeadvisor.holidayescape.GlobalConstants.TEL_KEY;
 import static eu.escapeadvisor.holidayescape.GlobalConstants.URL_KEY;
 
@@ -66,6 +67,7 @@ public class DetailsActivity extends AppCompatActivity implements OnMapReadyCall
         image = bundle.getInt(IMAGE_KEY);
         description = bundle.getString(DESC_KEY);
         address = bundle.getString(ADDRESS_KEY);
+        MainActivity.positionTab = bundle.getInt(POSITION_KEY);
         setPosition(lat, lng);
         setContentView();
     }
