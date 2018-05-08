@@ -1,7 +1,5 @@
 package eu.escapeadvisor.holidayescape;
 
-import com.google.android.gms.maps.model.LatLng;
-
 public interface GlobalConstants {
     String URL_KEY = "url_key";
     String NAME_KEY = "name_key";
